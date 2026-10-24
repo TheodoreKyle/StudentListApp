@@ -12,6 +12,7 @@ class StudentAdapter(
 ) : RecyclerView.Adapter<StudentAdapter.StudentViewHolder>() {
     class StudentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvStudentName = itemView.findViewById<TextView>(R.id.tvStudentName)
+        val tvStudentCourse = itemView.findViewById<TextView>(R.id.tvStudentCourse)
         val tvStudentSection = itemView.findViewById<TextView>(R.id.tvStudentSection)
     }
 
@@ -25,6 +26,7 @@ class StudentAdapter(
     override fun onBindViewHolder(holder: StudentViewHolder, position: Int) {
         val student = students[position]
         holder.tvStudentName.text = student["name"] ?: ""
+        holder.tvStudentCourse.text = student["course"] ?: ""
         holder.tvStudentSection.text = student["section"] ?: ""
     }
 

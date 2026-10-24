@@ -14,9 +14,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Student Name"
-        android:textSize="32sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvStudentCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course"
+        android:textSize="24sp"
+        android:layout_marginTop="6dp"
         android:gravity="center" />
 
     <TextView
@@ -24,8 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Section"
-        android:textSize="28sp"
-        android:textColor="#666666"
+        android:textSize="24sp"
         android:layout_marginTop="6dp"
         android:gravity="center" />
 
