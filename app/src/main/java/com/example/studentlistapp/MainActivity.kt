@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
             studentList.clear()
             studentAdapter.notifyDataSetChanged()
         }
+        /* I decided to put a "Clear Button" so that the initial student
+           information will be cleared for other students to be inputted. */
     }
 
     private fun addStudentRecord(
