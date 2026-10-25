@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val rvStudents = findViewById<RecyclerView>(R.id.rvStudents)
         val btnAddStudent = findViewById<Button>(R.id.btnAddStudent)
+        val btnClear =findViewById<Button>(R.id.btnClear)
 
         addStudentRecord("Theodore Kyle Choa", "Information Technology", "3ITB")
         addStudentRecord("Ron Christian Evaristo", "Information Technology", "3ITF")
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         btnAddStudent.setOnClickListener {
             showAddStudentDialog()
+        }
+
+        btnClear.setOnClickListener {
+            studentList.clear()
+            studentAdapter.notifyDataSetChanged()
         }
     }
 
