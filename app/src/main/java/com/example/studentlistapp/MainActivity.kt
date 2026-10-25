@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 val section = etStudentSection.text.toString().trim()
 
                 if (name.isEmpty() || course.isEmpty() || section.isEmpty()) {
-                    Toast.makeText(this, "Please enter name and section.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please fill out all fields.", Toast.LENGTH_SHORT).show()
                 } else {
                     addStudentRecord(name, course, section)
                     studentAdapter.notifyItemInserted(studentList.size - 1)
